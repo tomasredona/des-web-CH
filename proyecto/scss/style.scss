@@ -1,0 +1,152 @@
+//base
+@import "base/vars";
+@import "base/reset";
+@import "base/utilities";
+//components
+@import "components/navbar";
+@import "components/footer";
+//layouts
+@import "layouts/index";
+
+body,
+h2 {
+  background-color: $color-blanco;
+  margin: 0;
+}
+.header {
+  background-color: $color-negro;
+  @include flex(none, space-around, center, none);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $color-blanco;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: $color-negro;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: $color-blanco;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Estilo para el botón que activa el menú */
+#menu {
+  color: $color-rosado;
+}
+.dropdown-btn {
+  background-color: $color-negro;
+  color: $color-blanco;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* Estilo para la lista de hamburguesas */
+.hamburguesas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  background-color: $color-rosado;
+  height: 50px;
+  width: 50px;
+}
+#logo-header {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.a {
+  color: $color-rosado;
+  text-decoration: none;
+  font-size: 20px;
+}
+.titles-h2 {
+  font-family: $fuente-principal;
+  padding-top: 30px;
+  @include flex(none, center, none, none);
+  font-size: 30px;
+}
+.container-img {
+  background-color: $color-blanco;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 50px;
+}
+.container-names-img {
+  @include flex(column, center, center, none);
+}
+.clothes-names {
+  @include flex(column, center, center, none);
+  padding-bottom: 5px;
+}
+.item-img {
+  background-color: $color-blanco;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid $color-rosado;
+}
+.footer {
+  background-color: $color-blanco;
+  margin-top: 50px;
+  @include flex(column, none, center, 30px);
+}
+#img-copyright {
+  height: 20px;
+}
+.container-redes-ubi {
+  width: 100%;
+  @include flex(none, center, center, 100px);
+}
+.img-footer {
+  height: 30px;
+}
+.img-location {
+  padding-top: 5px;
+  height: 70px;
+}
+.container-redes {
+  display: flex;
+  gap: 25px;
+}
+
+/* Para pantallas de hasta 768px */
+@media (max-width: 768px) {
+  .dropdown-btn {
+    margin-top: 20px;
+  }
+  .container-img {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .item-img {
+    height: 300px;
+  }
+}
+
+/* Para pantallas de hasta 480px */
+@media (max-width: 480px) {
+  .dropdown-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .titles-h2 {
+    font-size: 24px;
+  }
+}
