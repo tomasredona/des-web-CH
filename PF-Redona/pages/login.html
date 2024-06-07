@@ -7,8 +7,6 @@
     <title>Tienda de ropa - Ofertas en Bermudas, Remeras y Buzos</title>
     <meta name="description"
         content="Encuentra las mejores ofertas en bermudas, remeras y buzos en nuestra tienda de ropa.">
-    <!--estilos css-->
-    <link rel="stylesheet" href="login.css">
     <!--fuentes de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--estilos css-->
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
@@ -32,26 +32,28 @@
             </button>
             <div class="dropdown-content">
                 <ul class="hamburguesas">
-                    <li><a href="/pages/remeras.html">Remeras</a></li>
-                    <li><a href="/pages/buzos.html">Buzos</a></li>
-                    <li><a href="/pages/bermudas.html">Bermudas</a></li>
+                    <li><a href="remeras.html">Remeras</a></li>
+                    <li><a href="buzos.html">Buzos</a></li>
+                    <li><a href="bermudas.html">Bermudas</a></li>
                 </ul>
             </div>
         </div>
-        <a href="/index.html"><img id="logo-header" src="/imgs/logo-header.png" alt=""></a>
+        <a href="/index.html"><img id="logo-header" src="/imgs/logo-header.png" alt="logo-header"></a>
         <div>
-            <a class="a" href="/pages/login.html">login</a>
+            <a class="a" href="../index.html">
+                <h1>Ofertas</h1>
+            </a>
         </div>
     </header>
 
     <div class="main-container">
         <form action="" class="form-login">
             <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                <input type="email" class="form-control custom-input" id="floatingInput" placeholder="Email">
                 <label for="floatingInput">Email</label>
             </div>
             <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                <input type="password" class="form-control custom-input" id="floatingPassword" placeholder="Contraseña">
                 <label for="floatingPassword">Contraseña</label>
             </div>
             <button type="button" class="btn btn-primary button"
@@ -67,21 +69,21 @@
         <div class="container-redes-ubi">
             <div class="container-redes">
                 <a href="https://www.instagram.com/?hl=es">
-                    <img class="img-footer" src="/imgs/instagram.png" alt="">
+                    <img class="img-footer" src="/imgs/instagram.png" alt="logo-instagram">
                 </a>
                 <a href="https://www.facebook.com/?redirect=false">
-                    <img class="img-footer" src="/imgs/facebook.png" alt="">
+                    <img class="img-footer" src="/imgs/facebook.png" alt="logo-facebook">
                 </a>
                 <a href="https://twitter.com/home">
-                    <img class="img-footer" src="/imgs/twitter.png" alt="">
+                    <img class="img-footer" src="/imgs/twitter.png" alt="logo-twitter">
                 </a>
             </div>
             <div>
-                <img class="img-location" src="/imgs/image-ubicacion.png" alt="">
+                <img class="img-location" src="/imgs/image-ubicacion.png" alt="logo-ubicacion">
             </div>
         </div>
         <div>
-            <img id="img-copyright" src="/imgs/image-copyright.png" alt="">
+            <img id="img-copyright" src="/imgs/image-copyright.png" alt="logo-copyright">
         </div>
 
     </footer>

@@ -72,7 +72,7 @@ h2 {
   text-decoration: none;
   font-size: 20px;
 }
-.titles-h2 {
+.titles-h1 {
   font-family: $fuente-principal;
   padding-top: 30px;
   @include flex(none, center, none, none);
@@ -144,7 +144,7 @@ h2 {
     padding: 10px;
     font-size: 14px;
   }
-  .titles-h2 {
+  .titles-h1 {
     font-size: 24px;
   }
 }

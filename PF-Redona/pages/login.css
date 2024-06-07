@@ -103,6 +103,21 @@ body {
   gap: 25px;
 }
 
+.custom-input {
+  border-radius: 0.75rem !important;
+  background-color: #f8f9fa !important;
+  border: 1px solid #ced4da !important;
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem !important;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+}
+
+.custom-input:focus {
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+  outline: none !important;
+}
+
 /* Estilos para pantallas de hasta 768px */
 @media (max-width: 768px) {
   .form-login {
