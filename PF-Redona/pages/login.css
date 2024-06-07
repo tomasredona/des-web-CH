@@ -118,6 +118,41 @@ body {
   outline: none !important;
 }
 
+.menu-icon {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+}
+
+.menu-icon:hover {
+  background-color: #f2f2f2;
+}
+
+.menu {
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li a {
+  color: #e0bdb9;
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+
+#menu-toggle:checked + .menu {
+  left: 0;
+}
+
 /* Estilos para pantallas de hasta 768px */
 @media (max-width: 768px) {
   .form-login {

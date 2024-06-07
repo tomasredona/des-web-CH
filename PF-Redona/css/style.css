@@ -48,24 +48,40 @@ body {
   display: block;
 }
 
-/* Estilo para el botón que activa el menú */
-#menu {
-  color: #e0bdb9;
-}
-
-.dropdown-btn {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 16px;
-  border: none;
+.menu-icon {
   cursor: pointer;
+  display: block;
+  padding: 15px;
 }
 
-/* Estilo para la lista de hamburguesas */
-.hamburguesas {
+.menu-icon:hover {
+  background-color: #f2f2f2;
+}
+
+.menu {
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+.menu ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+}
+
+.menu li a {
+  color: #e0bdb9;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid gray;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+
+#menu-toggle:checked + .menu {
+  left: 0;
 }
 
 .logo {
